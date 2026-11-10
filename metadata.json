@@ -1,0 +1,6 @@
+{
+  "name": "المرقام - محرر وروايات عربي",
+  "description": "تطبيق محرر روائي عربي متقدم للمؤلفين والروائيين مع وضع همنغواي، فحص الأسلوب، التخطيط، والعمل دون اتصال بالإنترنت بالكامل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

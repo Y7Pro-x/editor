@@ -1,0 +1,165 @@
+import { ReadingMode } from '../types';
+
+export interface ReadingThemeConfig {
+  id: ReadingMode;
+  name: string;
+  description: string;
+  bgClass: string;
+  cardBgClass: string;
+  headerBgClass: string;
+  textClass: string;
+  mutedTextClass: string;
+  borderClass: string;
+  accentClass: string;
+  accentBorderClass: string;
+  toolbarBgClass: string;
+  footerBgClass: string;
+  textareaColorClass: string;
+  placeholderColorClass: string;
+  previewBg: string;
+  previewText: string;
+  previewAccent: string;
+}
+
+export const READING_THEMES: Record<ReadingMode, ReadingThemeConfig> = {
+  sepia: {
+    id: 'sepia',
+    name: 'المخطوطة العتيقة (Sepia)',
+    description: 'درجات الورق القديم المائل للبيج الدافئ والمريح للعين',
+    bgClass: 'bg-[#2B2319]',
+    cardBgClass: 'bg-[#382E22]',
+    headerBgClass: 'bg-[#382E22]/95',
+    textClass: 'text-[#F4E9D8]',
+    mutedTextClass: 'text-[#C5B39A]',
+    borderClass: 'border-[#4A3E30]',
+    accentClass: 'text-[#E5A855]',
+    accentBorderClass: 'border-[#E5A855]/40',
+    toolbarBgClass: 'bg-[#382E22]',
+    footerBgClass: 'bg-[#261F16]',
+    textareaColorClass: 'text-[#F4E9D8]',
+    placeholderColorClass: 'placeholder-[#9B8872]',
+    previewBg: '#2B2319',
+    previewText: '#F4E9D8',
+    previewAccent: '#E5A855',
+  },
+  paper: {
+    id: 'paper',
+    name: 'أوراق دافئة (Day Cream)',
+    description: 'أرضية عاجية دافئة تحاكي طباعة الروايات الفاخرة وراحة العين',
+    bgClass: 'bg-[#FAF7F2]',
+    cardBgClass: 'bg-[#FFFFFF]',
+    headerBgClass: 'bg-[#FAF7F2]/95',
+    textClass: 'text-[#1C1E21]',
+    mutedTextClass: 'text-[#756F68]',
+    borderClass: 'border-[#EAE3D6]',
+    accentClass: 'text-[#C05638]',
+    accentBorderClass: 'border-[#C05638]/40',
+    toolbarBgClass: 'bg-[#FFFFFF]',
+    footerBgClass: 'bg-[#F2ECE1]',
+    textareaColorClass: 'text-[#1C1E21]',
+    placeholderColorClass: 'placeholder-[#A39C94]',
+    previewBg: '#FAF7F2',
+    previewText: '#1C1E21',
+    previewAccent: '#C05638',
+  },
+  dark: {
+    id: 'dark',
+    name: 'الوضع الليلي (Night Slate)',
+    description: 'فحم داكن أنيق مع لمسات التيراكوتا الهادئة المريحة',
+    bgClass: 'bg-[#191C22]',
+    cardBgClass: 'bg-[#22262E]',
+    headerBgClass: 'bg-[#191C22]/95',
+    textClass: 'text-[#F4F1EA]',
+    mutedTextClass: 'text-[#9A9DA4]',
+    borderClass: 'border-[#2D333E]',
+    accentClass: 'text-[#C05638]',
+    accentBorderClass: 'border-[#C05638]/50',
+    toolbarBgClass: 'bg-[#22262E]',
+    footerBgClass: 'bg-[#14161B]',
+    textareaColorClass: 'text-[#F4F1EA]',
+    placeholderColorClass: 'placeholder-[#6A6E78]',
+    previewBg: '#191C22',
+    previewText: '#F4F1EA',
+    previewAccent: '#C05638',
+  },
+  forest: {
+    id: 'forest',
+    name: 'غابة هادئة (Deep Forest)',
+    description: 'ظلال الصنوبر والزمرد الداكن للاسترخاء والانغماس الفكري',
+    bgClass: 'bg-[#14382F]',
+    cardBgClass: 'bg-[#1C473C]',
+    headerBgClass: 'bg-[#14382F]/95',
+    textClass: 'text-[#E6F0EB]',
+    mutedTextClass: 'text-[#9CB8AE]',
+    borderClass: 'border-[#26574A]',
+    accentClass: 'text-[#D4A373]',
+    accentBorderClass: 'border-[#D4A373]/40',
+    toolbarBgClass: 'bg-[#1C473C]',
+    footerBgClass: 'bg-[#0E2822]',
+    textareaColorClass: 'text-[#E6F0EB]',
+    placeholderColorClass: 'placeholder-[#6E8E83]',
+    previewBg: '#14382F',
+    previewText: '#E6F0EB',
+    previewAccent: '#D4A373',
+  },
+  rose: {
+    id: 'rose',
+    name: 'شفق وردي (Warm Rose)',
+    description: 'درجات الخوخ والغروب الدافئة لقراءة شاعرية رومانسية',
+    bgClass: 'bg-[#E8C5B8]',
+    cardBgClass: 'bg-[#F2D5CB]',
+    headerBgClass: 'bg-[#E8C5B8]/95',
+    textClass: 'text-[#2D1E18]',
+    mutedTextClass: 'text-[#7D5A4F]',
+    borderClass: 'border-[#D8B0A2]',
+    accentClass: 'text-[#9E3E24]',
+    accentBorderClass: 'border-[#9E3E24]/40',
+    toolbarBgClass: 'bg-[#F2D5CB]',
+    footerBgClass: 'bg-[#DCB6A8]',
+    textareaColorClass: 'text-[#2D1E18]',
+    placeholderColorClass: 'placeholder-[#9B766C]',
+    previewBg: '#E8C5B8',
+    previewText: '#2D1E18',
+    previewAccent: '#9E3E24',
+  },
+  oled: {
+    id: 'oled',
+    name: 'الأسود المطلق (OLED Deep)',
+    description: 'سواد نقي بنسبة 100% لتوفير البطارية وأقصى درجات التركيز',
+    bgClass: 'bg-[#000000]',
+    cardBgClass: 'bg-[#0A0A0A]',
+    headerBgClass: 'bg-[#0A0A0A]/95',
+    textClass: 'text-[#E5E5E5]',
+    mutedTextClass: 'text-stone-500',
+    borderClass: 'border-neutral-900',
+    accentClass: 'text-[#C05638]',
+    accentBorderClass: 'border-[#C05638]/30',
+    toolbarBgClass: 'bg-[#0A0A0A]',
+    footerBgClass: 'bg-[#050505]',
+    textareaColorClass: 'text-neutral-100',
+    placeholderColorClass: 'placeholder-neutral-700',
+    previewBg: '#000000',
+    previewText: '#E5E5E5',
+    previewAccent: '#C05638',
+  },
+  midnight: {
+    id: 'midnight',
+    name: 'زرقة منتصف الليل (Midnight Navy)',
+    description: 'درجات كحلية عميقة هادئة تشبه سماء الصحراء ليلاً',
+    bgClass: 'bg-[#0F172A]',
+    cardBgClass: 'bg-[#1E293B]',
+    headerBgClass: 'bg-[#1E293B]/95',
+    textClass: 'text-slate-100',
+    mutedTextClass: 'text-slate-400',
+    borderClass: 'border-slate-800',
+    accentClass: 'text-sky-400',
+    accentBorderClass: 'border-sky-500/40',
+    toolbarBgClass: 'bg-[#1E293B]',
+    footerBgClass: 'bg-[#090D16]',
+    textareaColorClass: 'text-slate-100',
+    placeholderColorClass: 'placeholder-slate-500',
+    previewBg: '#0F172A',
+    previewText: '#F1F5F9',
+    previewAccent: '#38BDF8',
+  },
+};

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-amiri: 'Amiri', serif;
+    --font-tajawal: 'Tajawal', system-ui, sans-serif;
+    --font-cairo: 'Cairo', system-ui, sans-serif;
+    --color-terracotta: #C05638;
+  }
+
+  body {
+    font-family: var(--font-amiri), system-ui, -apple-system, sans-serif;
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+/* Drop-cap for chapter openings matching reference image 1 */
+.drop-cap-ar::first-letter {
+  font-size: 3.6rem;
+  float: right;
+  line-height: 0.85;
+  margin-left: 0.85rem;
+  margin-top: 0.2rem;
+  font-weight: 700;
+  color: #C05638;
+  font-family: var(--font-amiri), serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 86, 56, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 86, 56, 0.4);
+}
